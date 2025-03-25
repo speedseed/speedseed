@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Swipper from './components/CommentSlider'
+import Slider from './components/CommentSlider'
 
 export default function page() {
   return (
@@ -93,8 +93,8 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className=''>
-        {/* <Swipper /> */}
+      <div className='h-[80dvh] bg-gray-100 py-10'>
+        <Slider />
       </div>
     </div>
   )
