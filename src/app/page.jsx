@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Slider from './components/CommentSlider'
 import Footer from './components/Footer'
+import FadeInSection from './components/FadeInSection'
 
 export default function page() {
   return (
@@ -27,12 +28,15 @@ export default function page() {
           <img src="/images/vector.png" alt="" />
         </div>
       </div>
+      <FadeInSection>
       <div className='text-center lg::w-[65%] lg:mx-auto md:px-10 px-4 mb-30 xl:px-32'>
         <p className='rubik text-sm text-green-700'>SPEEDSEED GRANTS</p>
         <h1 className='rubik lg:text-4xl md:text-[27px] text-2xl font-bold mb-5'>YOU DESERVE A HELPING HAND</h1>
         <p className='lg:text-xl rubik mb-5'>At SpeedSeed, we understand the challenges small business owners face, and we’re dedicated to supporting you. That’s why we’re awarding over 40 grants to our small business customers this year.</p>
         <p className='lg:text-xl rubik'>Grantees will receive $5,000 to help grow their business, along with access to eligible SpeedSeed products and services available at the time of the grant disbursement. If you meet our eligibility requirements, you can apply to become one of our quarterly grantees. Take the opportunity to get the support you need to elevate your business. Join us in our mission to empower small business owners like you and apply today!</p>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className='mb-20 xl:px-32 px-4 md:px-10'>
         <p className='rubik text-sm text-green-700'>ELIGIBILITY & VALUE</p>
         <h1 className='rubik md:text-[27px] lg:text-4xl text-2xl font-bold'>How the program works</h1>
@@ -76,11 +80,15 @@ export default function page() {
           </div>
         </div>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className='text-center mb-30 px-4 md:px-10'>
         <h1 className='rubik lg:text-4xl md:text-[27px] text-2xl font-bold lg:mb-2 mb-1'>Do you qualify?</h1>
         <p className='lg:text-xl text-sm md:text-[16px] rubik lg:mb-5 mb-3'>Read the SpeedSeed <span className='cursor-pointer text-blue-500 underline'>grant guidelines, terms, and conditions</span>. Ready to apply? Login to your dashboard to get started.</p>
         <button className=' cursor-pointer px-12 rounded-xl text-white py-3 bg-green-700 font-semibold hover:bg-[#E28457] transition-colors duration-500'>Apply Now!</button>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className='lg:mb-40 mb-20 xl:px-32 px-4 md:px-10 grid lg:grid-cols-2 xl:gap-5 gap-10'>
         <div>
           <img src="images/image4.png" alt="" />
@@ -94,6 +102,8 @@ export default function page() {
           </div>
         </div>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div 
         style={{ 
           backgroundImage: "url('/images/main-banner3.jpg')", 
@@ -110,14 +120,19 @@ export default function page() {
           <Slider />
         </div>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className='text-center mb-30 px-4 md:px-10'>
         <h1 className='rubik lg:text-4xl md:text-[27px] text-2xl font-bold lg:mb-2 mb-1'>Start building towards success today</h1>
         <p className='lg:text-xl text-sm md:text-[16px] rubik lg:mb-5 mb-3'>Log in to your dashboard to start your application</p>
         <button className=' cursor-pointer px-12 rounded-xl text-white py-3 bg-green-700 font-semibold hover:bg-[#E28457] transition-colors duration-500'>Apply Now!</button>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div>
         <Footer />
       </div>
+      </FadeInSection>
     </div>
   )
 }
