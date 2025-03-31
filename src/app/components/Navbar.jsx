@@ -1,7 +1,9 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react'
 import { HiMenuAlt2 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import { SiSpeedypage } from 'react-icons/si';
 
 
 export default function Navbar() {
@@ -30,7 +32,13 @@ export default function Navbar() {
                 <div className='block lg:hidden' onClick={handleMenu}>
                     <button><HiMenuAlt2 className='text-2xl md:text-3xl' /></button>
                 </div>
-                <h1 className='md:text-2xl lg:text-3xl text-xl rubik font-bold text-green-700 hover:text-[#E28457] cursor-pointer transition-colors duration-500'>LOGO</h1>
+                <Link href={'/'} className='cursor-pointer group'>
+                    <div className='flex items-center justify-center'>
+                        <SiSpeedypage  className='md:text-2xl lg:text-3xl text-xl text-green-700 group-hover:text-[#E28457] transition-all duration-500'/>
+                    </div>
+                    <h1 className='text-green-700 text-[9px] leading-none rubik font-bold group-hover:text-[#E28457] transition-all duration-500'>Business Grants</h1>
+                </Link>
+                {/* <h1 className='md:text-2xl lg:text-3xl text-xl rubik font-bold text-green-700 hover:text-[#E28457] cursor-pointer transition-colors duration-500'>LOGO</h1> */}
                 <ul className='hidden lg:flex items-center text-green-700'>
                     <li className='border-b-3 hover:text-[#E28457] border-transparent hover:border-[#E28457] cursor-pointer transition-colors duration-500 px-4 py-3'>About Us</li>
                     <li className='border-b-3 hover:text-[#E28457] border-transparent hover:border-[#E28457] cursor-pointer transition-colors duration-500 px-4 py-3'>Free Grant Tips</li>
@@ -44,7 +52,9 @@ export default function Navbar() {
                     <p className='text-xl'>|</p>
                     <p className='cursor-pointer hover:text-green-700'>Login</p>
                 </div>
-                <button  className='xl:px-8 px-5 text-sm lg:text-[16px] xl:rounded-lg text-green-700 md:py-2 py-1 border-2 border-green-700 hover:border-[#E28457] hover:text-[#E28457] font-semibold transition-colors duration-500'>Apply Now!</button>
+                <Link href={'sign-in'}>
+                    <button  className='xl:px-8 px-5 text-sm lg:text-[16px] xl:rounded-lg text-green-700 md:py-2 py-1 border-2 border-green-700 hover:border-[#E28457] hover:text-[#E28457] font-semibold transition-colors duration-500'>Apply Now!</button>
+                </Link>
             </div>
             
         </nav>

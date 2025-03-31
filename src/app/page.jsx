@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Slider from './components/CommentSlider'
 import Footer from './components/Footer'
 import FadeInSection from './components/FadeInSection'
+import Link from 'next/link'
 
 export default function page() {
   return (
@@ -21,7 +22,9 @@ export default function page() {
             <p className='text-green-700 font-semibold leading-none text-xs md:text-[16px]'>SPEEDSEED $5K GRANT PROGRAM</p>
             <h1 className='rubik lg:text-[55px] md:text-5xl text-2xl md:leading-tight font-semibold text-black/80 md:mb-5 mb-3'>A grant programme that help's us move your business forward.</h1>
             <p className='rubik text-gray-500 mb-5 leading-tight text-sm md:text-[16px]'>Plus get expert feedback on your business and two months of free mentorship in our vibrant online community for entrepreneurs and business owners</p>
-            <button className='lg:px-12 px-9 rounded text-white py-3 bg-green-700 font-semibold hover:bg-[#E28457] transition-colors duration-500'>Apply Now!</button>
+            <Link href='/sign-in'>
+              <button className='lg:px-12 px-9 rounded text-white py-3 bg-green-700 font-semibold hover:bg-[#E28457] transition-colors duration-500'>Apply Now!</button>
+            </Link>
           </div>
         </div>
         <div>
